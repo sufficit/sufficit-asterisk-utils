@@ -20,6 +20,7 @@ namespace Sufficit.Asterisk
                 "PJSIP" => AsteriskChannelProtocol.PJSIP,
                 "IAX" => AsteriskChannelProtocol.IAX,
                 "IAX2" => AsteriskChannelProtocol.IAX2,
+                "MESSAGE" => AsteriskChannelProtocol.MESSAGE,
                 _ => throw new ArgumentOutOfRangeException(nameof(source), $"unrecognized protocol: {source}"),
             };
         }
